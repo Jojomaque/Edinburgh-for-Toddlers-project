@@ -1,8 +1,86 @@
-h1{font-family: Poppins;
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+header h1{font-family: Poppins;
 font-weight: 700;
 font-size: 96px;
-line-height: 144px;
-letter-spacing: 0%;
+line-height: 1.5;
+margin: 0;
+
+}
+
+header h2 {
+    font-family: Poppins;
+font-weight: 400;
+font-size: 40px;
+line-height: 1.5;
+margin: 0;
+
+}
 
 
+header a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  padding: 16px 32px;
+  margin-top: 32px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #181897;
+}
+
+
+
+    header {
+    background-image: url(../Images/EdinburughIllustration.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Centers the background image */
+     width: 100%;
+    color: #181897;
+    text-align:center;
+    padding: 260px 0; /* Corrected padding */
+}
+
+
+
+header h1, header h2 {
+    position: relative;
+    top: -200px; /* Moves the h1 and h2 text upwards */
+}
+
+header a {
+    position: relative;
+    top: -175px; /* Keeps the link aligned with other elements */
+    margin-top: 20px;
+border-radius: 75px;}
+
+
+
+
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
 }
