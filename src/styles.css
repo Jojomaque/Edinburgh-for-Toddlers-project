@@ -3,12 +3,37 @@
   margin: 0 auto;
 }
 
+.grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 64px;
+}
+
+
+.grid div {
+    flex: 1; /* Ensures each section takes up equal space */
+    margin: 0 10px; /* Adds some space between sections */
+}
+
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.grid-2-columns {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
+
+
 
   header {
     background-image: url(../Images/EdinburughIllustration.png);
@@ -54,23 +79,43 @@ header a {
   background: #181897;
 }
 
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
 
 footer {
     background-color: #f8f9fa; /* Light background color for contrast */
     padding: 20px 0; /* Padding for some space around the footer */
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 64px;
-}
-
-
-.grid div {
-    flex: 1; /* Ensures each section takes up equal space */
-    margin: 0 10px; /* Adds some space between sections */
-}
 
 
 .footer-bottom {
