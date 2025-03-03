@@ -3,10 +3,7 @@
   margin: 0 auto;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-}
+
 
 section {
   max-width: 1200px;
@@ -64,18 +61,17 @@ footer {
 }
 
 .grid {
-    display: flex;
-    justify-content: space-between; /* Evenly distributes space between items */
-    align-items: flex-start; /* Aligns items to the top */
-    max-width: 1400px; /* Matches your container max-width */
-    margin: 0 auto; /* Centers the footer content */
-    padding: 20px; /* Adds padding inside the grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 64px;
 }
+
 
 .grid div {
     flex: 1; /* Ensures each section takes up equal space */
     margin: 0 10px; /* Adds some space between sections */
 }
+
 
 .footer-bottom {
     text-align: center; /* Centers the text */
