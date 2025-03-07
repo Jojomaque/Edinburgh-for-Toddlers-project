@@ -1,39 +1,133 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #272044;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-.grid-3-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 64px;
+.text-center {
+  text-align: center;
 }
 
-
-.grid div {
-    flex: 1; /* Ensures each section takes up equal space */
-    margin: 0 10px; /* Adds some space between sections */
+.grid {
+  display: grid;
+  grid-gap: 64px;
 }
 
 
 .img-responsive {
   max-width: 100%;
+  height: auto; /* Ensure images retain their aspect ratio */
+  display: block; /* Ensures the image is rendered as a block-level element */
+  border-radius: 8px; /* Optional: rounded corners for images */
+  margin-bottom: 20px; /* Space below image */
 }
 
+
 .grid-2-columns {
-    display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-
-
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
+.grid-3-columns {
+  display: grid;  /* Add display: grid */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 32px;  /* Adjust the grid gap for better spacing */
 }
 
 
+.card {
+  background: white;
+  margin: 30px 0;
+ display: flex;  /* Add display: flex */
+   flex-direction: column;  /* Align items vertically */
+     align-items: center;  /* Center content horizontally */
+      text-align: center;  /* Center text within the card */
+        padding: 20px;  /* Add padding */
+          border: 1px solid #ddd;
+            border-radius: 10px;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                min-height: 500px; /* Ensure all cards have a minimum height */
+}
+
+.card-header {
+  margin-bottom: 20px; /* Ensure space below header */
+}
+
+.card-header img {
+  width: 100%;
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures images cover the container */
+}
+
+
+.card-body {
+  flex: 1; /* Take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly */
+  padding: 30px;
+}
+
+
+/* Card Title */
+.card h4 {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;  /* Space below title */
+  color: #272044;
+}
+
+
+.card-footer {
+  width: 100%;
+  padding: 0 30px 30px;
+}
+
+/* Card button */
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #012dd1;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+
+section.secondary {
+  background: #f8f8f8;
+}
+
+header h1, header h2 {
+    position: relative;
+    top: -200px; /* Moves the h1 and h2 text upwards */
+}
+
+header a {
+    position: relative;
+    top: -175px; /* Keeps the link aligned with other elements */
+    margin-top: 20px;
+border-radius: 75px;}
 
   header {
     background-image: url(../Images/EdinburughIllustration.png);
@@ -41,22 +135,22 @@ section {
     background-size: cover;
     background-position: center; /* Centers the background image */
      width: 100%;
-    color: #181897;
+    color: #012dd1;
     text-align:center;
     padding: 260px 0; /* Corrected padding */
 }
 
-header h1{font-family: Poppins;
+header h1{font-family: "pf-marlet-display", sans-serif;
 font-weight: 700;
-font-size: 96px;
+font-size: 60px;
+font-style: normal;
 line-height: 1.5;
 margin: 0;
-
 }
 
 header h2 {
-    font-family: Poppins;
-font-weight: 400;
+    font-family: "pf-marlet-display", sans-serif;
+font-weight: 700;
 font-size: 40px;
 line-height: 1.5;
 margin: 0;
@@ -76,7 +170,7 @@ header a {
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background: #181897;
+  background: #012dd1;
 }
 
 main {
@@ -102,6 +196,25 @@ main h3 {
   margin: 0;
 }
 
+
+
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1;
+  color: #272044;
+}
+
 main p {
   font-style: normal;
   font-weight: 400;
@@ -110,6 +223,7 @@ main p {
   color: #272044;
   opacity: 0.7;
 }
+
 
 footer {
     background-color: #f8f9fa; /* Light background color for contrast */
@@ -134,21 +248,7 @@ footer {
     margin: 0;
 }
 
-h3 {
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 24px; /* Adjust font size if needed */
-    margin-bottom: 10px; /* Space between heading and content */
-    color: #181897;
-}
 
-p {
-    font-family: Poppins;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.6;
-    color: #555;
-}
 
 .social-icons {
     display: flex;
@@ -160,7 +260,7 @@ p {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #181897; /* Adjust as needed */
+    background-color: #012dd1; /* Adjust as needed */
     color: #ffffff;
     text-align: center;
     line-height: 40px; /* Centers the icons vertically */
@@ -172,16 +272,7 @@ p {
     background-color: #333; /* Darker color on hover */
 }
 
-header h1, header h2 {
-    position: relative;
-    top: -200px; /* Moves the h1 and h2 text upwards */
-}
 
-header a {
-    position: relative;
-    top: -175px; /* Keeps the link aligned with other elements */
-    margin-top: 20px;
-border-radius: 75px;}
 
 
 
