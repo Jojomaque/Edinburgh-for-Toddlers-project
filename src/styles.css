@@ -43,6 +43,10 @@ body {
   border-radius: 8px; /* Optional: rounded corners for embeds */
 }
 
+.instagram-embeds {
+  margin: 30px 0;
+}
+
 .card-header {
   display: flex; /* Use Flexbox */
   gap: 16px; /* Adjust gap as needed */
