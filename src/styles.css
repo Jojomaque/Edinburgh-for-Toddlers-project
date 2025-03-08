@@ -279,3 +279,45 @@ footer {
 .social-icons a:hover {
   background-color: #333; /* Darker color on hover */
 }
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-header {
+    display: flex; /* Use Flexbox for stacking */
+    flex-direction: column; /* Stack items vertically */
+    gap: 16px; /* Add space between the image and map */
+  }
+
+  .card-header img {
+    display: block; /* Ensure the image remains visible */
+    width: 100%; /* Adjust width to fit container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9; /* Maintain the aspect ratio for the map */
+  }
+}
